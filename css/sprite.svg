@@ -1,0 +1,17 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209 54" id="logo">
+    <path d="M43.851 29.7l-19.607 9.5 7.793-25.18z" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" fill-rule="evenodd" fill="#2584ff" stroke="#2584ff"></path>
+    <path d="M37.033 29.7l19.607 9.5-7.793-25.18z" fill="#ff3400" stroke="#ff3400" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" fill-rule="evenodd"></path><text transform="matrix(.923 0 0 .923 71.466 35.437)" font-size="32.498" fill="#fff" font-family="Inter" font-weight="700">Moshify</text>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 87.8" id="popular">
+    <path fill="#1e0f6d" d="M0 4.7h35L30.3 0H5.1L0 4.7z"></path>
+    <path fill="#1b0760" d="M5.3.2v87l11.9-11.9 12.5 12.5V.2H5.3z"></path><text transform="rotate(90 1.05 12.25)" font-size="15" fill="#fff" font-family="Inter-Bold,Inter" font-weight="700">
+      <tspan letter-spacing="-.01em">P</tspan>
+      <tspan x="9.6" y="0">opular</tspan>
+    </text>
+  </symbol>
+  <symbol viewBox="0 0 0 0" id="sprite"></symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" id="tick">
+    <path d="M2 4l4 4 8-8" fill="none" stroke="#2dd5a7" stroke-width="2"></path>
+  </symbol>
+</svg>
