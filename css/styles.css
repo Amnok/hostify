@@ -1,16 +1,23 @@
-:root{
+:root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: Inter, Arial, Helvitica;
     color: var(--color-body);
@@ -18,20 +25,27 @@ body {
     line-height: 1.5rem;
     padding: 3rem;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
 }
+
 h1 {
     font-size: 7rem;
 }
+
 h2 {
     font-size: 4rem;
 }
+
 h3 {
     font-size: 3rem;
 }
-p{
+
+p {
     margin-top: 0px;
 }
 
@@ -39,12 +53,15 @@ p{
     body {
         font-size: 1.8rem;
     }
+
     h1 {
         font-size: 8rem;
     }
+
     h2 {
         font-size: 4rem;
     }
+
     h3 {
         font-size: 2.4rem;
     }
@@ -61,11 +78,13 @@ a {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .link-arrow::after {
     content: '-->';
     margin-left: 5px;
     transition: margin 0.15s;
 }
+
 .link-arrow:hover::after {
     margin-left: 10px;
 }
@@ -85,6 +104,7 @@ a {
     padding: 0.5rem 2rem;
     white-space: nowrap;
 }
+
 .badge--small {
     font-size: 1.6rem;
 }
@@ -92,17 +112,21 @@ a {
 .badge--primary {
     background: var(--color-primary);
 }
+
 .badge--secondary {
     background: var(--color-secondary);
 }
+
 @media screen and (min-width: 1024px) {
     .badge {
         font-size: 1.5rem;
     }
+
     .badge--small {
         font-size: 1.2rem;
     }
 }
+
 /* lists */
 
 .lists {
@@ -110,6 +134,7 @@ a {
     padding-left: 0;
     color: var(--color-headings);
 }
+
 .list--inline .list__item {
     display: inline-block;
     margin: 2rem;
@@ -141,6 +166,7 @@ a {
 .icon--primary {
     fill: var(--color-primary);
 }
+
 .icon-container {
     background: #f3f9fa;
     width: 64px;
@@ -165,6 +191,7 @@ a {
     text-align: center;
     margin: 1rem 0;
 }
+
 .btn--primary {
     background: var(--color-primary);
     color: #fff;
@@ -182,6 +209,7 @@ a {
 .btn--secondary :hover {
     background: #00c8eb;
 }
+
 .btn--accent {
     background: var(--color-accent);
     color: #fff;
@@ -198,7 +226,7 @@ a {
 }
 
 .btn--outline {
-    background:#fff;
+    background: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
 }
@@ -210,6 +238,41 @@ a {
 
 @media screen and (min-width: 1024) {
     .btn {
+        font-size: 1.5rem;
+    }
+}
+
+/* inputs */
+
+.input {
+    padding-left: 1.5rem 3.5rem;
+    border-radius: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    outline: 0;
+    color: var(--color-headings);
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and (min-width: 1024) {
+    .input {
         font-size: 1.5rem;
     }
 }
