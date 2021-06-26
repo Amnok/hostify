@@ -649,12 +649,12 @@ a {
     border-bottom: 1px solid #222;
 }
 
-.nav__item>a {
+.nav__item > a {
     color: #d2d0db;
     transition: color 0.3s;
 }
 
-.nav__item>a:hover {
+.nav__item > a:hover {
     color: #fff;
 }
 
@@ -715,5 +715,34 @@ a {
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+}
+
+.mynav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.mynav__menu{
+    cursor: pointer;
+}
+.mynav__list {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .mynav {
+        padding:0;
+    }
+    .mynav__list {
+        width: auto;
+        display: flex;
+
+    }
+    .mynav__menu {
+        display: none;
     }
 }
