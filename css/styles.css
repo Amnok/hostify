@@ -14,6 +14,7 @@
 *::before {
     box-sizing: border-box;
 }
+
 ::selection {
     background: var(--color-primary);
     color: #fff;
@@ -28,7 +29,7 @@ body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
 h1,
@@ -215,6 +216,7 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
 }
+
 .btn .icon {
     width: 2rem;
     height: 2rem;
@@ -392,6 +394,7 @@ a {
     top: -6px;
     right: 5%;
 }
+
 .plan--popular {
     transform: scale(1.1);
 }
@@ -538,6 +541,7 @@ a {
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    margin: 0 8rem 4rem 8rem;
 }
 
 .callout--primary {
@@ -618,6 +622,7 @@ a {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -631,7 +636,7 @@ a {
 
 .block--dark h1,
 .block--dark h2,
-.block--dark h3{
+.block--dark h3 {
     color: white;
 }
 
@@ -672,12 +677,12 @@ a {
     border-bottom: 1px solid #222;
 }
 
-.nav__item > a {
+.nav__item>a {
     color: #d2d0db;
     transition: color 0.3s;
 }
 
-.nav__item > a:hover {
+.nav__item>a:hover {
     color: #fff;
 }
 
@@ -692,6 +697,7 @@ a {
     box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
 }
+
 .nav__brand {
     transform: translateY(3px)
 }
@@ -720,7 +726,7 @@ a {
     font-size: 2rem;
     color: #b9c3cf;
     letter-spacing: 1px;
-    margin: 2rem  0 5rem;
+    margin: 2rem 0 5rem;
 }
 
 .hero__image {
@@ -735,22 +741,25 @@ a {
     .hero {
         padding-top: 0;
     }
+
     .hero__content {
         text-align: left;
         align-self: center;
     }
 }
 
-.mynav{
+.mynav {
     background-color: black;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem;
 }
-.mynav__menu{
+
+.mynav__menu {
     cursor: pointer;
 }
+
 .mynav__list {
     width: 100%;
 }
@@ -758,20 +767,22 @@ a {
 @media screen and (min-width: 1024px) {
 
     .mynav {
-        padding:0;
+        padding: 0;
     }
+
     .mynav__list {
         width: auto;
         display: flex;
 
     }
+
     .mynav__menu {
         display: none;
     }
 }
 
 /* Domain block*/
-.block-domain .input-group{
+.block-domain .input-group {
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
     margin: 4rem auto;
@@ -800,9 +811,11 @@ a {
 .plan {
     transition: transform .2s ease-out;
 }
-.block-plans .grid{
+
+.block-plans .grid {
     gap: 8rem 4rem;
 }
+
 .block-plans .card {
     max-width: 500px;
     margin: 0 auto;
@@ -811,8 +824,9 @@ a {
 .plan:hover {
     transform: scale(1.05);
 }
+
 .plan--popular:hover {
-    transform: scale(1.15); 
+    transform: scale(1.15);
 }
 
 /* features*/
@@ -821,12 +835,15 @@ a {
     gap: 4rem 2rem;
     margin: 12rem 0;
 }
+
 .feature__heading {
     margin: 1rem 0;
 }
+
 .feature__image {
     width: 100%;
 }
+
 .feature:first-of-type {
     margin-top: 6rem;
 }
@@ -847,9 +864,63 @@ a {
     .block-showcase .grid {
         grid-template-columns: 50% 50%;
     }
+
     .block-showcase__image {
         width: auto;
         max-width: 700px;
         justify-self: end;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: #232323;
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+.footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+.footer__copyright {
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: .3;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__sections {
+grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    .footer .collapsible__chevron {
+        display: none;
+    }
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer__brand {
+        order: -1;
+        margin-top: 1rem;
+    }
+    .footer__copyright {
+        font-size: 1.5rem;
+    }
+    .footer__sections {
+        border: 0;
+    }
+    .footer__heading {
+        font-size: 1.6rem;
+    }
+    .footer__section .list {
+        margin: 0;
     }
 }
