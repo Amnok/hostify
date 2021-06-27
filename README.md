@@ -1,5 +1,4 @@
-
-# Project Title
+Hostify✈️
 
 A full fledge implementation of a hosting service, built with HTML, CSS, JS and ❤️.
 
@@ -10,6 +9,4 @@ A full fledge implementation of a hosting service, built with HTML, CSS, JS and 
   
 ## Demo
 
-Insert gif or link to demo
-
-  https://hostifly.netlify.app/
+Feel free to check out full application here ➡️  https://hostifly.netlify.app/
