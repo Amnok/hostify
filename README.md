@@ -1,6 +1,6 @@
 Hostify✈️
 
-A full fledge implementation of a hosting service, built with HTML, CSS, JS and ❤️.
+A full fledge implementation of a hosting service, built with HTML, CSS, and  JS.
 
 ## Screenshots
 
